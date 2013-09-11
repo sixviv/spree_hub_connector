@@ -36,12 +36,12 @@ Augury.Views.Home.Index = Backbone.View.extend(
     $('#content-header').find('.page-title').text('Overview')
 
 
-    $("#integrations-select").on "select2-selected", (event, object) =>
+    $("#integrations-select").on "change", (event, object) =>
       selected = $("#integrations-select").select2('data').element
       integrationId = $(selected).data('integration-id')
       @showIntegrationModal(integrationId)
 
-    @$el.find("#connections-select").on "select2-selected", (event, object) =>
+    @$el.find("#connections-select").on "change", (event, object) =>
       selected = $("#connections-select").select2('data').element
       connectionId = $(selected).val()
       if connectionId == 'new-connection'
