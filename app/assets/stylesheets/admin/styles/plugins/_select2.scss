@@ -1,4 +1,4 @@
-.select2-chosen {
+.select2-choice span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -85,4 +85,8 @@
       color: $color-2;
     }
   }
+}
+
+.connection-select-dropdown {
+  margin-left: -108px;
 }
